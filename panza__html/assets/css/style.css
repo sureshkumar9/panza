@@ -1,0 +1,124 @@
+html {
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+
+body {
+    font-family     : 'Poppins', sans-serif;
+    background-color: #fff;
+    margin          : 0;
+    color           : #040406;
+    height          : 100%;
+    overflow        : auto;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing        : border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.container {
+    padding  : 0;
+    margin   : 0 auto;
+    width    : 100%;
+    max-width: 1170px;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size  : 100%;
+    font-weight: normal;
+    margin     : 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width     : 100%;
+}
+
+*:focus,
+:focus {
+    outline   : none;
+    box-shadow: none;
+}
+
+ul {
+    list-style-type: none;
+    padding        : 0;
+    margin         : 0;
+}
+
+.d-flex {
+    display         : -webkit-box;
+    display         : -ms-flexbox;
+    display         : flex;
+    -ms-flex-wrap   : wrap;
+    flex-wrap       : wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack   : justify;
+    justify-content : space-between;
+}
+
+.active {
+    background-color: rgb(2, 0, 36) !important;
+    opacity         : 1 !important;
+}
+
+#top__header {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    padding         : 0;
+    z-index         : 10000;
+    transition      : all 0.2s ease-in-out;
+    height          : auto;
+    background-color: rgb(194 193 193);
+    opacity         : 0.9;
+}
+
+#top__header .logo {
+    width : 175px;
+    margin: 14px 0;
+}
+
+#top__header .menue {
+    margin: auto 0;
+}
+
+#top__header .menue li {
+    padding: 30px 6px;
+}
+
+#top__header li.search {
+    width: 30px;
+}
+
+#top__header .menue li a {
+    color         : #fff;
+    text-transform: uppercase;
+    font-weight   : 600;
+
+}
+
+#top__header .menue li:hover a {
+    color: aqua;
+}
+
+#top__header .menue li:hover {
+    border-bottom: 2px solid;
+    color        : aqua;
+}
