@@ -73,7 +73,7 @@ ul {
 }
 
 .active {
-    background-color: rgb(2, 0, 36) !important;
+    background-color: rgb(8, 29, 31) !important;
     opacity         : 1 !important;
 }
 
@@ -121,4 +121,1080 @@ ul {
 #top__header .menue li:hover {
     border-bottom: 2px solid;
     color        : aqua;
+}
+
+#top__slider {
+    width: 100%;
+}
+
+#top__slider .image__slider {
+    position: relative;
+    width   : 100%;
+}
+
+#top__slider img.slider__img {
+    width : 100%;
+    height: 600px;
+}
+
+#top__slider .slider__box {
+    position  : absolute;
+    top       : 25%;
+    left      : 0;
+    right     : 0;
+    text-align: center;
+    color     : #ffff;
+}
+
+#top__slider .pargraph,
+#top__slider .heading {
+    font-weight: bold;
+    color      : #fff;
+    line-height: 1.6;
+}
+
+#top__slider .pargraph {
+    font-size: 24px;
+}
+#top__slider .pargraph span{
+    color: rgb(78, 206, 163) ;
+}
+
+#top__slider .heading {
+    font-size: 50px;
+}
+
+#top__slider .paragraph__one {
+    color         : #fff;
+    font-size     : 20px;
+    letter-spacing: 1px;
+}
+
+.btn {
+    margin-top: 60px;
+
+}
+
+.btn button {
+    padding      : 12px;
+    border       : none;
+    border-top   : 2px solid #ffff;
+    border-radius: 3px;
+    cursor       : pointer;
+    display      : inline-block;
+    margin       : 0 8px;
+    color        : #ffff;
+}
+
+.btn button:first-child {
+    background-color: rgb(78, 206, 163);
+
+}
+
+.btn button:last-child {
+    background-color: deepskyblue;
+}
+
+#top__slider .slick-prev,
+#top__slider .slick-next {
+    display: none !important;
+}
+
+#top__slider .slick-dots {
+    position  : absolute;
+    bottom    : 5px;
+    display   : block;
+    width     : 100%;
+    padding   : 0;
+    margin    : 0;
+    list-style: none;
+    text-align: end;
+}
+
+#top__slider .slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+
+/* main section start */
+#first__cart_section .card {
+    width           : 25%;
+    background-color: rgb(78, 206, 163);
+    ;
+    color     : #fff;
+    text-align: center;
+    padding   : 50px 0;
+    border-top: 5px solid #ffff;
+}
+
+#first__cart_section .card img {
+    width : 120px;
+    height: 90px;
+}
+
+#first__cart_section .card:nth-child(3),
+#first__cart_section .card:first-child {
+    background-color: rgb(8, 29, 31);
+    border-top      : 5px solid rgb(78, 206, 163);
+    color           : rgb(78, 206, 163);
+}
+
+#first__cart_section .txt {
+    padding-top   : 20px;
+    text-transform: uppercase;
+    font-weight   : bold;
+}
+
+.space {
+    padding: 40px 0;
+}
+
+/* feature section  css*/
+.main__heading {
+    text-align: center;
+    font-size : 32px;
+    position  : relative;
+}
+
+.main__heading::after {
+    content         : "";
+    position        : absolute;
+    bottom          : -10px;
+    left            : 44%;
+    width           : 80px;
+    height          : 3px;
+    background-color: rgb(78, 206, 163);
+}
+
+#features {
+    padding: 50px 0;
+}
+
+#features .feature_one {
+    width : 29%;
+    margin: 20px 0;
+
+}
+
+#features .feature_one:hover .feature__head {
+    color: rgb(78, 206, 163);
+}
+
+#features .feature__head {
+    margin     : auto 12px;
+    font-weight: bold;
+}
+
+#features .feature__txt {
+    line-height: 1.8;
+    opacity    : 0.8;
+}
+
+.feature__header {
+    display: flex;
+}
+
+/* tabs section */
+#tabs__section {
+    padding            : 50px 0;
+    background-image   : url(../img/one.jpg);
+    height             : 100%;
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    opacity            : 0.9;
+}
+
+#tabs__section .tab__one {
+    width: 50%;
+}
+
+#tabs__section img {
+    width : 50%;
+    margin: auto 0;
+}
+
+#tabs__section .tab__one {
+    color: #ffff;
+}
+
+#tabs__section .tab-panel ul li {
+    padding: 12px;
+}
+
+#tabs__section .tab-panel ul li a {
+    color: #ffff;
+}
+
+#tabs__section .bar {
+    border: 1px solid rgb(110, 110, 110);
+    width : 100%;
+    margin: 12px 0;
+}
+
+#tabs__section .inner__bar__one {
+    width           : 70%;
+    padding         : 12px;
+    background-color: rgb(138, 79, 135);
+}
+
+#tabs__section .inner__bar__two {
+    width           : 90%;
+    padding         : 12px;
+    background-color: rgb(73, 122, 214);
+}
+
+#tabs__section .inner__bar__three {
+    width           : 60%;
+    padding         : 12px;
+    background-color: rgb(199, 103, 103);
+}
+
+#tabs__section .inner__bar__four {
+    width           : 95%;
+    padding         : 12px;
+    background-color: rgb(21, 146, 136);
+}
+
+#tabs__section .inner__bar__five {
+    width           : 85%;
+    padding         : 12px;
+    background-color: rgb(126, 115, 19);
+}
+
+.tabset>input[type="radio"] {
+    position: absolute;
+    left    : -200vw;
+}
+
+.tabset .tab-panel {
+    display   : none;
+    min-height: 360px;
+}
+
+.tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
+.tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
+.tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
+.tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
+.tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
+.tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6) {
+    display: block;
+}
+
+.tabset>label {
+    position   : relative;
+    display    : inline-block;
+    padding    : 10px 15px 10px;
+    cursor     : pointer;
+    font-weight: 600;
+}
+
+.tabset>label:visited,
+.tabset>input:focus+label {
+    color     : rgb(78, 206, 163);
+    border-top: 1px solid rgb(78, 206, 163);
+}
+
+.tabset>label:hover::after,
+.tabset>input:focus+label::after,
+.tabset>input:checked+label::after {
+    background: rgb(78, 206, 163);
+}
+
+.tab-panel {
+    padding: 30px 0;
+}
+
+.tabset {
+    width     : 100%;
+    margin-top: 50px;
+}
+
+#tabs__section .main__heading {
+    text-align: start;
+    font-size : 32px;
+    position  : relative;
+}
+
+#tabs__section .main__heading::after {
+    content : "";
+    position: absolute;
+    bottom  : -10px;
+    left    : 30%;
+}
+
+/* second tab css */
+#work__section {
+    padding         : 50px 0;
+    background-color: rgb(243 246 245);
+}
+
+/*
+ CSS for the main interaction
+*/
+
+.warpper {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    width         : 100%;
+    margin-top    : 50px;
+}
+
+.tab {
+    cursor    : pointer;
+    padding   : 10px 20px;
+    margin    : 0px -3px;
+    background: #ffff;
+    border    : 1px solid rgb(228, 227, 227)
+}
+
+.panels {
+    width   : 100%;
+    overflow: hidden;
+    padding : 70px 0;
+}
+
+.panel {
+    display  : none;
+    animation: fadein .8s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.radio {
+    display: none;
+}
+
+#one:checked~.panels #one-panel,
+#two:checked~.panels #two-panel,
+#three:checked~.panels #three-panel,
+#four:checked~.panels #four-panel,
+#five:checked~.panels #five-panel {
+    display: block
+}
+
+#one:checked~.tabs #one-tab,
+#two:checked~.tabs #two-tab,
+#three:checked~.tabs #three-tab,
+#four:checked~.tabs #four-tab,
+#five:checked~.tabs #five-tab {
+    background: #fffffff6;
+    color     : #000;
+    border-top: 3px solid rgb(78, 206, 163);
+}
+
+.tabs__img {
+    text-align: center;
+    width     : 25%;
+    position  : relative;
+    border    : 1px solid rgb(189, 186, 186);
+}
+
+.about__img {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+    display : none;
+    height  : 208px;
+    padding : 63px 0;
+}
+
+.tabs__img:hover .about__img {
+    display         : block;
+    background-color: aliceblue;
+    border-top      : 3px solid rgb(78, 206, 163);
+}
+
+.about__img .heading__two {
+    color      : rgb(78, 206, 163);
+    font-weight: bold;
+    font-size  : 20px;
+    line-height: 1.7;
+    padding-top: 12px;
+}
+
+.txt__two {
+    opacity: 0.5;
+}
+
+.load__more {
+    padding         : 12px 20px;
+    background-color: rgb(78, 206, 163);
+    border          : none;
+    display         : block;
+    margin          : 0 auto;
+    font-weight     : bold;
+    color           : #ffff;
+    cursor          : pointer;
+}
+
+.load__more::before {
+    content    : '+';
+    font-size  : 20px;
+    padding-top: 12px;
+    color      : #ffff;
+
+}
+
+/* las tab section css */
+#services__section {
+    padding: 50px 0;
+}
+
+::selection {
+    background-color: rgb(78, 206, 163);
+}
+
+.tabbed {
+    width  : 100%;
+    display: inline-block;
+    margin : 50px auto;
+}
+
+.tabbed>input {
+    display: none;
+}
+
+.tabbed>label {
+    display   : block;
+    float     : left;
+    padding   : 12px 20px;
+    cursor    : pointer;
+    background: rgb(243 246 245);
+    border    : 1px solid #ffff;
+}
+
+.tabbed>input:checked+label {
+    background: rgb(78, 206, 163);
+}
+
+.tab_one {
+    position      : relative;
+    margin-top    : 22px;
+    padding-bottom: 116px;
+}
+
+.tab_one>div {
+    width           : 100%;
+    position        : absolute;
+    line-height     : 1.4em;
+    opacity         : 0;
+    transform-origin: top center;
+    z-index         : 0;
+    margin          : 50px 0;
+}
+
+#tab-nav-1:checked~.tab_one>div:nth-of-type(1),
+#tab-nav-2:checked~.tab_one>div:nth-of-type(2),
+#tab-nav-3:checked~.tab_one>div:nth-of-type(3),
+#tab-nav-4:checked~.tab_one>div:nth-of-type(4),
+#tab-nav-5:checked~.tab_one>div:nth-of-type(5),
+#tab-nav-6:checked~.tab_one>div:nth-of-type(6) {
+    transform: rotateX(0);
+    opacity  : 1;
+    z-index  : 1;
+}
+
+@media screen and (max-width: 700px) {
+    .tabbed {
+        width: 400px;
+    }
+
+    .tabbed>label {
+        display: none;
+    }
+
+    .tab_one>div {
+        width        : 100%;
+        border       : none;
+        padding      : 0;
+        opacity      : 1;
+        position     : relative;
+        transform    : none;
+        margin-bottom: 60px;
+    }
+
+    .tab_one>div h2 {
+        border-bottom : 2px solid rgb(78, 206, 163);
+        padding-bottom: 0.5em;
+    }
+}
+
+.web__design {
+    display: flex;
+}
+
+.web__design img {
+    width  : 15%;
+    padding: 5px 0;
+}
+
+.txt_two {
+    text-align : justify;
+    line-height: 1.7;
+    opacity    : 0.7;
+}
+
+.website {
+    text-align : justify;
+    padding    : 0 25px;
+    line-height: 1.7;
+    opacity    : 0.7;
+}
+
+/* istall section css */
+#install__section {
+    background-image   : url(../img/pexels-nao-triponez-792199-min.jpg);
+    height             : 100%;
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    padding            : 50px 0;
+    text-align         : center;
+}
+
+#install__section .second__headind {
+    text-transform: uppercase;
+    font-size     : 35px;
+    line-height   : 2.0;
+    font-weight   : bold;
+    color         : rgb(78, 206, 163);
+}
+
+#install__section .second__txt {
+    font-size  : 17px;
+    line-height: 1.7;
+    color      : rgb(201, 197, 197);
+}
+
+#install__section button {
+    margin          : 50px 0;
+    padding         : 12px;
+    border          : 0;
+    border-top      : 4px solid #ffff;
+    background-color: rgb(78, 206, 163);
+    font-weight     : bold;
+    color           : #ffff;
+    cursor          : pointer;
+}
+
+/* news section csss */
+#news__section {
+    padding: 50px 0;
+}
+
+#news__section .card__two {
+    width           : 24%;
+    position        : relative;
+    border          : 1px solid rgb(226, 226, 226);
+    margin          : 8px 0;
+    background-color: rgb(243 246 245);
+}
+
+#news__section .card__two:hover .card__heading {
+    color: rgb(78, 206, 163);
+}
+
+#news__section .card__two:hover .date {
+    background-color: rgb(78, 206, 163);
+}
+
+#news__section .card__two img {
+    height: 212px;
+    width : 100%;
+}
+
+#news__section .card__two .date {
+    position        : absolute;
+    top             : 0;
+    right           : 0;
+    background-color: rgb(5, 24, 6);
+    padding         : 10px 29px 0 29px;
+    color           : #ffff;
+}
+
+#news__section .card__two .date span {
+    display: block;
+    padding: 8px 0;
+}
+
+#news__section .card__heading {
+    padding    : 12px;
+    font-weight: 600;
+    opacity    : 0.8;
+}
+
+#news__section .admin {
+    padding: 0px 12px 12px;
+    opacity: 0.5;
+}
+
+.card__three {
+    width           : 25%;
+    background-color: rgb(8, 29, 31);
+    text-align      : center;
+    color           : #ffff;
+    padding         : 40px 0;
+    border-top      : 7px solid rgb(78, 206, 163);
+}
+
+.card__three img {
+    width           : 60px;
+    padding         : 15px;
+    background-color: rgb(78, 206, 163);
+    border-radius   : 100%;
+}
+
+.card__three .data_img {
+    margin       : 0 auto;
+    width        : 100px;
+    padding      : 15px;
+    border-radius: 100%;
+    border       : 1px solid rgb(78, 206, 163);
+}
+
+.card__three .data__count {
+    padding    : 8px 0;
+    font-size  : 30px;
+    line-height: 1.7;
+}
+
+.card__three p {
+    color: rgb(78, 206, 163);
+}
+
+.card__three:nth-child(4),
+.card__three:nth-child(2) {
+    background-color: rgb(78, 206, 163);
+    border-top      : 7px solid rgb(8, 29, 31);
+}
+
+.card__three:nth-child(2) p,
+.card__three:nth-child(4) p {
+    color: rgb(8, 29, 31);
+}
+
+.card__three:nth-child(2) .data_img,
+.card__three:nth-child(4) .data_img {
+    border: 1px solid rgb(8, 29, 31);
+}
+
+.card__three:nth-child(2) img,
+.card__three:nth-child(4) img {
+    background-color: rgb(8, 29, 31);
+}
+
+/* pricing section css */
+#pricing {
+    padding: 50px 0;
+}
+
+#pricing .main__card {
+    width     : 25%;
+    text-align: center;
+    border    : 1px solid rgb(236, 236, 236);
+    opacity   : 0.8;
+}
+
+#pricing .main__card ul li {
+    padding      : 15px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+#pricing .main__card ul li:last-child {
+    border-bottom: none;
+}
+
+#pricing .main__card ul li:last-child button {
+    padding         : 12px 50px;
+    border          : none;
+    color           : #fff;
+    background-color: rgb(8, 29, 31);
+}
+
+#pricing .main__card ul li:first-child {
+    font-weight: bold;
+    font-size  : 22px;
+}
+
+#pricing .main__card ul li:nth-child(2) {
+    background-color: rgb(8, 29, 31);
+    color           : #ffff;
+    font-size       : 45px;
+}
+
+#pricing .main__card ul li:nth-child(2) span {
+    font-size: 12px;
+}
+
+#pricing .main__card:hover {
+    box-shadow: 0px 0px 4px #888888;
+}
+
+#pricing .main__card:hover .headin__card:first-child {
+    color: rgb(78, 206, 163);
+}
+
+#pricing .main__card:hover .card__btn,
+#pricing .main__card:hover .price__sec {
+    background-color: rgb(78, 206, 163);
+}
+
+#last__slider {
+    /* background-image: url(../img/pexels-sanaan-mazhar-3075993-min-min.jpg);
+    height             : 100%;
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover; */
+    background-color: rgb(20, 76, 82);
+    padding         : 50px 0;
+    color           : #ffff;
+}
+
+#last__slider .main__box {
+    text-align: center;
+}
+
+#last__slider .main__box .qoutes {
+    width : 45px;
+    margin: 30px auto;
+}
+
+#last__slider .main__box .slider__txt {
+    line-height: 1.9;
+    font-size  : 18px;
+}
+
+#last__slider .main__box .auther {
+    line-height: 1.9;
+    font-size  : 18px;
+    color      : rgb(78, 206, 163);
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+#last__slider .main__box .auther__img {
+    width           : 100px;
+    height          : 100px;
+    border-radius   : 100%;
+    padding         : 8px;
+    background-color: rgb(78, 206, 163);
+    margin          : 30px auto;
+}
+
+#our_meet_section {
+    padding: 50px 0;
+}
+
+#our_meet_section .meet__card {
+    width           : 24%;
+    position        : relative;
+    border          : 1px solid rgb(247, 245, 245);
+    background-color: rgb(18, 62, 66);
+}
+
+#our_meet_section .meet__card:hover {
+    background-color: rgb(78, 206, 163);
+}
+
+#our_meet_section .meet__card:hover .designation {
+    color: black;
+}
+
+#our_meet_section .meet__card .meet__img {
+    width: 100%;
+}
+
+#our_meet_section .meet__card .plus__icon {
+    position        : absolute;
+    top             : 30%;
+    left            : 40%;
+    background-color: #ffff;
+    padding         : 12px;
+    border-radius   : 100%;
+    display         : none;
+}
+
+#our_meet_section .meet__card:hover .meet__img {
+    opacity: 0.6;
+}
+
+#our_meet_section .meet__card:hover .plus__icon {
+    display: block;
+}
+
+#our_meet_section .meet__card .plus__icon img {
+    width: 30px;
+}
+
+h3.meet__name {
+    color      : #fff;
+    font-weight: bold;
+    padding    : 8px 17px;
+}
+
+p.designation {
+    padding: 0 17px 20px;
+    color  : rgb(78, 206, 163);
+}
+
+.social_net ul li {
+    width       : 25%;
+    text-align  : center;
+    padding     : 20px;
+    border-right: 1px solid #ffff;
+    border-top  : 1px solid #ffff;
+}
+
+.social_net ul li:last-child {
+    border-right: 0;
+}
+
+.social_net ul li img {
+    width: 20px;
+}
+
+#wordpress__theme {
+    background-image   : url(../img/naturee.jpg);
+    height             : 100%;
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    opacity            : 0.9;
+    padding            : 50px 0;
+}
+
+#wordpress__theme .wordpress__txt {
+    font-size  : 37px;
+    font-weight: bold;
+    line-height: 1.9;
+    text-align : center;
+    color      : #ffff;
+}
+
+#wordpress__theme .creative__txt {
+    font-size  : 30px;
+    font-weight: 500;
+    line-height: 1.9;
+    text-align : center;
+    color      : rgb(78, 206, 163);
+}
+
+#wordpress__theme .tablet {
+    width      : 60%;
+    margin-left: -70px;
+}
+
+.technologies {
+    width : 40%;
+    margin: auto 0;
+}
+
+.technologies ul li {
+    padding: 12px 0;
+    color  : #ffff;
+}
+
+.technologies ul li::before {
+    content         : '✔';
+    margin          : 0 12px;
+    padding         : 6px;
+    background-color: rgb(78, 206, 163);
+    border-radius   : 100%;
+}
+
+.technologies button {
+    margin          : 30px 13px;
+    padding         : 12px;
+    background-color: rgb(78, 206, 163);
+    border          : 0;
+    border-top      : 3px solid #ffff;
+}
+
+#form__section {
+    padding: 50px 0;
+}
+
+#form__section .map {
+    width      : 50%;
+    margin-left: -124px;
+}
+
+#form__section .right_part {
+    width: 57%;
+
+}
+
+#form__section .main__heading {
+    text-align: start;
+}
+
+#form__section .main__heading::after {
+    content: "";
+    left   : 18%;
+}
+
+textarea,
+.form input {
+    padding: 12px;
+    margin : 12px 0;
+    width  : 70%;
+}
+
+.form button {
+    width           : 70%;
+    padding         : 12px;
+    border          : 0;
+    cursor          : pointer;
+    background-color: rgb(78, 206, 163);
+    color           : #ffff;
+}
+
+/* footer section css */
+#footer__section {
+    padding         : 50px 0;
+    background-color: rgb(8, 29, 31);
+    color           : #ffff;
+}
+
+#footer__section .footer__box {
+    width: 21%;
+}
+
+#footer__section .footer__box .footer__logo {
+    font-size     : 30px;
+    font-weight   : bolder;
+    line-height   : 1.5;
+    padding-bottom: 10px;
+}
+
+#footer__section .footer__box .footer__logo span {
+    color: rgb(78, 206, 163);
+}
+
+#footer__section .footer__box .footer__txt {
+    line-height: 1.6;
+}
+
+#footer__section .footer__box address {
+    padding    : 20px 0;
+    font-style : normal;
+    line-height: 1.7;
+}
+
+#footer__section .footer__box ul li {
+    padding: 5px 0;
+    color  : #ffff;
+}
+
+#footer__section .footer__box li a {
+    color: #ffff;
+}
+
+.footer__boxs {
+    width: 25%;
+}
+
+.footer__boxs .footer__heading {
+    font-size  : 19px;
+    font-weight: bold;
+    line-height: 1.9;
+}
+
+.footer__boxs .wrapper_footer {
+    display       : flex;
+    margin        : 25px 0;
+    padding-bottom: 20px;
+    border-bottom : 1px solid #fff;
+}
+
+.footer__boxs .wrapper_footer img {
+    width: 70px;
+}
+
+.about__post {
+    padding: 0 12px;
+}
+
+.post__heading {
+    color      : rgb(78, 206, 163);
+    line-height: 1.6;
+    font-size  : 14px;
+    font-weight: bold;
+}
+
+.post__txt {
+    line-height: 1.6;
+}
+
+.btn_wrapper {
+    padding: 22px 0;
+}
+
+.btn_wrapper button {
+    padding         : 8px 20px;
+    color           : #ffff;
+    background-color: transparent;
+    border          : 1px solid #ffff;
+    margin          : 3px 0;
+    cursor          : pointer;
+}
+
+.btn_wrapper button:hover {
+    background-color: rgb(78, 206, 163);
+    border          : 0;
+}
+
+.subscribe {
+    line-height: 1.5;
+    padding    : 12px 0;
+}
+
+.footer__boxs .mail {
+    padding         : 8px;
+    background-color: transparent;
+    border          : 1px solid rgb(194, 194, 194);
+}
+
+.footer__boxs .btn_go {
+    padding         : 8px 13px;
+    margin          : 0 -5px;
+    color           : rgb(78, 206, 163);
+    background-color: transparent;
+    border          : 1px solid rgb(194, 194, 194);
+    cursor: pointer;
+}
+
+.footer__boxs .flick {
+    display  : flex;
+    flex-wrap: wrap;
+    margin   : 12px 0;
+}
+
+.footer__boxs .flick img {
+    width : 46%;
+    margin: 12px 0;
+}
+/* copy right css */
+.copy_right{
+    background-color:  rgb(14, 51, 54);
+    padding: 20px;
+}
+.copy_right p{
+    color: #ffff;
+    opacity: 0.5;
+    text-align: center;
+}
+.copy_right p span{
+    color:rgb(78, 206, 163);
 }
