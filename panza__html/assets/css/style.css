@@ -73,7 +73,7 @@ ul {
 }
 
 .active {
-    background-color: rgb(8, 29, 31) !important;
+    background-color: #32312c !important;
     opacity         : 1 !important;
 }
 
@@ -86,8 +86,8 @@ ul {
     z-index         : 10000;
     transition      : all 0.2s ease-in-out;
     height          : auto;
-    background-color: rgb(194 193 193);
-    opacity         : 0.9;
+    background-color: #32312c;
+    opacity: 0.9;
 }
 
 #top__header .logo {
@@ -108,19 +108,24 @@ ul {
 }
 
 #top__header .menue li a {
-    color         : #fff;
+    color         : #ffff;
     text-transform: uppercase;
-    font-weight   : 600;
+    /* font-weight   : 600; */
 
 }
 
 #top__header .menue li:hover a {
-    color: aqua;
+    color: #19ceab;
 }
 
 #top__header .menue li:hover {
     border-bottom: 2px solid;
     color        : aqua;
+}
+.three__line {
+    width: 30px;
+    margin: auto 0;
+    display: none;
 }
 
 #top__slider {
@@ -134,12 +139,12 @@ ul {
 
 #top__slider img.slider__img {
     width : 100%;
-    height: 600px;
+    height: 700px;
 }
 
 #top__slider .slider__box {
     position  : absolute;
-    top       : 25%;
+    top       : 245px;
     left      : 0;
     right     : 0;
     text-align: center;
@@ -156,8 +161,9 @@ ul {
 #top__slider .pargraph {
     font-size: 24px;
 }
-#top__slider .pargraph span{
-    color: rgb(78, 206, 163) ;
+
+#top__slider .pargraph span {
+    color: rgb(78, 206, 163);
 }
 
 #top__slider .heading {
@@ -226,10 +232,9 @@ ul {
     padding   : 50px 0;
     border-top: 5px solid #ffff;
 }
-
 #first__cart_section .card img {
-    width : 120px;
-    height: 90px;
+    width : 60px;
+    height: 60px;
 }
 
 #first__cart_section .card:nth-child(3),
@@ -240,7 +245,7 @@ ul {
 }
 
 #first__cart_section .txt {
-    padding-top   : 20px;
+    padding-top   : 25px;
     text-transform: uppercase;
     font-weight   : bold;
 }
@@ -259,11 +264,11 @@ ul {
 .main__heading::after {
     content         : "";
     position        : absolute;
-    bottom          : -10px;
+    bottom          : -22px;
     left            : 44%;
     width           : 80px;
-    height          : 3px;
-    background-color: rgb(78, 206, 163);
+    height          : 5px;
+    background-image: url(../img/header-line.png);
 }
 
 #features {
@@ -272,7 +277,7 @@ ul {
 
 #features .feature_one {
     width : 29%;
-    margin: 20px 0;
+    margin: 23px 0;
 
 }
 
@@ -286,8 +291,9 @@ ul {
 }
 
 #features .feature__txt {
-    line-height: 1.8;
-    opacity    : 0.8;
+    line-height: 1.7;
+    opacity: 0.8;
+    padding-top: 11px;
 }
 
 .feature__header {
@@ -496,7 +502,7 @@ ul {
     text-align: center;
     width     : 25%;
     position  : relative;
-    border    : 1px solid rgb(189, 186, 186);
+    border    : 1px solid rgb(240, 239, 239);
 }
 
 .about__img {
@@ -504,11 +510,19 @@ ul {
     top     : 0;
     left    : 0;
     right   : 0;
-    display : none;
-    height  : 208px;
-    padding : 63px 0;
+   display: none;
+    padding : 39px 0;
 }
-
+img.link_tabs {
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border: 2px solid  rgb(78, 206, 163);
+    border-radius: 100%;
+}
+img.link_tabs:hover{
+    background-color:rgb(78, 206, 163) ;
+}
 .tabs__img:hover .about__img {
     display         : block;
     background-color: aliceblue;
@@ -518,13 +532,14 @@ ul {
 .about__img .heading__two {
     color      : rgb(78, 206, 163);
     font-weight: bold;
-    font-size  : 20px;
+    font-size  : 16px;
     line-height: 1.7;
-    padding-top: 12px;
+    padding-top: 17px;
 }
 
 .txt__two {
     opacity: 0.5;
+    font-size: 13px;
 }
 
 .load__more {
@@ -536,120 +551,11 @@ ul {
     font-weight     : bold;
     color           : #ffff;
     cursor          : pointer;
+    font-size: 19px;
 }
 
-.load__more::before {
-    content    : '+';
-    font-size  : 20px;
-    padding-top: 12px;
-    color      : #ffff;
-
-}
-
-/* las tab section css */
-#services__section {
-    padding: 50px 0;
-}
-
-::selection {
-    background-color: rgb(78, 206, 163);
-}
-
-.tabbed {
-    width  : 100%;
-    display: inline-block;
-    margin : 50px auto;
-}
-
-.tabbed>input {
-    display: none;
-}
-
-.tabbed>label {
-    display   : block;
-    float     : left;
-    padding   : 12px 20px;
-    cursor    : pointer;
-    background: rgb(243 246 245);
-    border    : 1px solid #ffff;
-}
-
-.tabbed>input:checked+label {
-    background: rgb(78, 206, 163);
-}
-
-.tab_one {
-    position      : relative;
-    margin-top    : 22px;
-    padding-bottom: 116px;
-}
-
-.tab_one>div {
-    width           : 100%;
-    position        : absolute;
-    line-height     : 1.4em;
-    opacity         : 0;
-    transform-origin: top center;
-    z-index         : 0;
-    margin          : 50px 0;
-}
-
-#tab-nav-1:checked~.tab_one>div:nth-of-type(1),
-#tab-nav-2:checked~.tab_one>div:nth-of-type(2),
-#tab-nav-3:checked~.tab_one>div:nth-of-type(3),
-#tab-nav-4:checked~.tab_one>div:nth-of-type(4),
-#tab-nav-5:checked~.tab_one>div:nth-of-type(5),
-#tab-nav-6:checked~.tab_one>div:nth-of-type(6) {
-    transform: rotateX(0);
-    opacity  : 1;
-    z-index  : 1;
-}
-
-@media screen and (max-width: 700px) {
-    .tabbed {
-        width: 400px;
-    }
-
-    .tabbed>label {
-        display: none;
-    }
-
-    .tab_one>div {
-        width        : 100%;
-        border       : none;
-        padding      : 0;
-        opacity      : 1;
-        position     : relative;
-        transform    : none;
-        margin-bottom: 60px;
-    }
-
-    .tab_one>div h2 {
-        border-bottom : 2px solid rgb(78, 206, 163);
-        padding-bottom: 0.5em;
-    }
-}
-
-.web__design {
-    display: flex;
-}
-
-.web__design img {
-    width  : 15%;
-    padding: 5px 0;
-}
-
-.txt_two {
-    text-align : justify;
-    line-height: 1.7;
-    opacity    : 0.7;
-}
-
-.website {
-    text-align : justify;
-    padding    : 0 25px;
-    line-height: 1.7;
-    opacity    : 0.7;
+button.load__more img {
+    padding: 0 12px;
 }
 
 /* istall section css */
@@ -739,6 +645,9 @@ ul {
     opacity: 0.5;
 }
 
+.date p {
+    text-align: center;
+}
 .card__three {
     width           : 25%;
     background-color: rgb(8, 29, 31);
@@ -940,7 +849,7 @@ ul {
 h3.meet__name {
     color      : #fff;
     font-weight: bold;
-    padding    : 8px 17px;
+    padding: 20px 17px 8px;
 }
 
 p.designation {
@@ -962,6 +871,7 @@ p.designation {
 
 .social_net ul li img {
     width: 20px;
+    height: 20px;
 }
 
 #wordpress__theme {
@@ -1021,6 +931,7 @@ p.designation {
     border-top      : 3px solid #ffff;
 }
 
+/* form section */
 #form__section {
     padding: 50px 0;
 }
@@ -1031,8 +942,8 @@ p.designation {
 }
 
 #form__section .right_part {
-    width: 57%;
-
+    width : 57%;
+    margin: auto 0;
 }
 
 #form__section .main__heading {
@@ -1044,20 +955,30 @@ p.designation {
     left   : 18%;
 }
 
-textarea,
-.form input {
+.right_part input {
     padding: 12px;
-    margin : 12px 0;
-    width  : 70%;
+    width  : 75%;
+    margin : 10px 0;
 }
 
-.form button {
-    width           : 70%;
-    padding         : 12px;
+.right_part input:last-child {
+    background-color: rgb(18, 62, 66);
     border          : 0;
-    cursor          : pointer;
-    background-color: rgb(78, 206, 163);
     color           : #ffff;
+    cursor          : pointer;
+}
+
+.right_part input:last-child:hover {
+    background-color: rgb(78, 206, 163);
+}
+
+.right_part textarea {
+    margin: 10px 0;
+    width : 75%;
+}
+
+.error {
+    color: red;
 }
 
 /* footer section css */
@@ -1164,6 +1085,7 @@ textarea,
     padding         : 8px;
     background-color: transparent;
     border          : 1px solid rgb(194, 194, 194);
+    color           : #ffff;
 }
 
 .footer__boxs .btn_go {
@@ -1172,7 +1094,12 @@ textarea,
     color           : rgb(78, 206, 163);
     background-color: transparent;
     border          : 1px solid rgb(194, 194, 194);
-    cursor: pointer;
+    cursor          : pointer;
+}
+
+.footer__boxs .error {
+    color  : red;
+    padding: 12px 0;
 }
 
 .footer__boxs .flick {
@@ -1185,16 +1112,216 @@ textarea,
     width : 46%;
     margin: 12px 0;
 }
+
 /* copy right css */
-.copy_right{
-    background-color:  rgb(14, 51, 54);
-    padding: 20px;
+.copy_right {
+    background-color: rgb(14, 51, 54);
+    padding         : 20px;
 }
-.copy_right p{
-    color: #ffff;
-    opacity: 0.5;
+
+.copy_right p {
+    color     : #ffff;
+    opacity   : 0.5;
     text-align: center;
 }
-.copy_right p span{
-    color:rgb(78, 206, 163);
+
+.copy_right p span {
+    color: rgb(78, 206, 163);
+}
+
+/* media querry */
+@media screen and (max-width: 992px) {
+    .three__line {
+       display: block;
+    }
+    .container {
+        padding  : 0 6%;
+        margin   : 0 auto;
+        width    : 100%;
+        max-width: 100%;
+    }
+    #top__header .menue {
+        margin: auto 0;
+        position: absolute;
+        background: rgb(8, 29, 31);
+        width: 100%;
+        height: 1000vh;
+        top: 100%;
+        left: 0;
+        display: none;
+    }
+    header#top__header .menue .d-flex {
+        flex-direction: column;
+    }
+    #top__header .menue li {
+        padding: 25px 6px;
+        margin-left: 68px;
+        border-bottom: 1px solid #fff;
+    }
+    #top__header .menue li:last-child{
+        border: 0;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    #tabs__section,
+    #tabs__section .tab__one,
+    #first__cart_section .card {
+        width: 100%;
+    }
+
+    #features .feature_one {
+        width : 100%;
+        margin: 10px 0;
+    }
+
+    .space {
+        padding: 12px 0;
+    }
+    #news__section,
+    #install__section,
+    #work__section,
+    #features {
+        padding: 20px 0;
+    }
+
+    #tabs__section img {
+        display: none;
+    }
+
+    .tabset {
+
+        margin-top: 12px;
+    }
+
+    .tabset>label {
+        padding   : 8px 8px;
+        font-size : 14px;
+        margin-top: 12px;
+    }
+    #form__section,
+    #wordpress__theme,
+    #last__slider,
+    #tabs__section {
+        padding: 20px 0;
+    }
+
+    .tab_one {
+        position      : relative;
+        margin-top    : 0;
+        padding-bottom: 0;
+    }
+
+    #install__section .second__headind {
+        font-size: 20px;
+    }
+
+    #news__section .card__two {
+        width : 100%;
+        margin: 13px 0;
+    }
+    #news__section .card__two img {
+        height: 300px;
+        width: 100%;
+    }
+    #news__section .card__two .date {
+        padding: 29px 40px 0 40px;
+        text-align: center;
+    }
+    #footer__section .footer__box,
+    .footer__boxs,
+    .card__three {
+        width: 100%;
+    }
+    #our_meet_section .meet__card,
+    #pricing .main__card {
+        width: 100%;
+        margin: 30px 0 5px;
+    }
+    #wordpress__theme .wordpress__txt {
+        font-size: 20px;
+    }
+    #wordpress__theme .creative__txt {
+        font-size: 18px;
+    }
+    #form__section .map,
+    #wordpress__theme .tablet {
+        display: none;
+    }
+    .technologies {
+        width: 100%;
+        margin: auto 0;
+    }
+    #form__section .right_part {
+        width: 100%;
+        margin:0 auto;
+    }
+    #top__slider .slider__box {
+        top: 28%;
+    }
+    .btn {
+        margin-top: 30px;
+    }
+    .right_part textarea,
+    .right_part input {
+        padding: 12px;
+        width: 100%;
+        margin: 10px 0 5px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #top__slider .pargraph {
+        font-size: 18px;
+    }
+    #top__slider .heading {
+        font-size: 32px;
+    }
+    #top__slider .paragraph__one {
+        font-size: 14px;
+    }
+    #top__slider img.slider__img {
+        width: 100%;
+        height: 342px;
+    }
+    #top__slider .slick-list {
+        height: 342px !important;
+    }
+    #tabs__section .main__heading,
+    .main__heading {
+        font-size: 22px;
+    }
+    .main__heading::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 36%;
+    }
+    #features .feature__txt {
+        font-size: 14px;
+    }
+    #first__cart_section .card img {
+        width: 100px;
+        height: 60px;
+    }
+    #tabs__section .main__heading::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 19%;
+    }
+    .tabset>label {
+        padding: 8px 4px;
+        font-size: 11px;
+        margin-top: 53px;
+    }
+    #work__section{
+        display: none;
+    }
+    #form__section .space{
+        padding: 30px 0 0 0;
+    }
+    .copy_right {
+        padding: 11px;
+    }
 }
