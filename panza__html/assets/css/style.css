@@ -87,7 +87,7 @@ ul {
     transition      : all 0.2s ease-in-out;
     height          : auto;
     background-color: #32312c;
-    opacity: 0.9;
+    opacity         : 0.9;
 }
 
 #top__header .logo {
@@ -108,8 +108,8 @@ ul {
 }
 
 #top__header .menue li a {
-    color         : #ffff;
-    text-transform: uppercase;
+    color            : #ffff;
+    text-transform   : uppercase;
     /* font-weight   : 600; */
 
 }
@@ -122,10 +122,12 @@ ul {
     border-bottom: 2px solid;
     color        : aqua;
 }
+
 .three__line {
-    width: 30px;
-    margin: auto 0;
+    width  : 30px;
+    margin : auto 0;
     display: none;
+    cursor: pointer;
 }
 
 #top__slider {
@@ -232,6 +234,7 @@ ul {
     padding   : 50px 0;
     border-top: 5px solid #ffff;
 }
+
 #first__cart_section .card img {
     width : 60px;
     height: 60px;
@@ -251,7 +254,7 @@ ul {
 }
 
 .space {
-    padding: 40px 0;
+    padding: 6rem 0;
 }
 
 /* feature section  css*/
@@ -262,13 +265,15 @@ ul {
 }
 
 .main__heading::after {
-    content         : "";
-    position        : absolute;
-    bottom          : -22px;
-    left            : 44%;
-    width           : 80px;
-    height          : 5px;
+    content: "";
+    position: absolute;
+    bottom: -22px;
+    right: 0;
+    width: 80px;
+    height: 5px;
     background-image: url(../img/header-line.png);
+    transform: translate(-50%,50%);
+    left: 50%
 }
 
 #features {
@@ -292,7 +297,7 @@ ul {
 
 #features .feature__txt {
     line-height: 1.7;
-    opacity: 0.8;
+    opacity    : 0.8;
     padding-top: 11px;
 }
 
@@ -510,23 +515,26 @@ ul {
     top     : 0;
     left    : 0;
     right   : 0;
-   display: none;
-    padding : 39px 0;
+    display : none;
+    padding : 49px 0;
 }
+
 img.link_tabs {
-    width: 48px;
-    height: 48px;
-    padding: 10px;
-    border: 2px solid  rgb(78, 206, 163);
+    width        : 48px;
+    height       : 48px;
+    padding      : 10px;
+    border       : 2px solid rgb(78, 206, 163);
     border-radius: 100%;
 }
-img.link_tabs:hover{
-    background-color:rgb(78, 206, 163) ;
+
+img.link_tabs:hover {
+    background-color: rgb(78, 206, 163);
 }
+
 .tabs__img:hover .about__img {
     display         : block;
     background-color: aliceblue;
-    border-top      : 3px solid rgb(78, 206, 163);
+    border-top      : 4px solid rgb(78, 206, 163);
 }
 
 .about__img .heading__two {
@@ -538,7 +546,7 @@ img.link_tabs:hover{
 }
 
 .txt__two {
-    opacity: 0.5;
+    opacity  : 0.5;
     font-size: 13px;
 }
 
@@ -551,7 +559,7 @@ img.link_tabs:hover{
     font-weight     : bold;
     color           : #ffff;
     cursor          : pointer;
-    font-size: 19px;
+    font-size       : 19px;
 }
 
 button.load__more img {
@@ -580,7 +588,7 @@ button.load__more img {
 #install__section .second__txt {
     font-size  : 17px;
     line-height: 1.7;
-    color      : rgb(201, 197, 197);
+    color      : rgb(248, 247, 247);
 }
 
 #install__section button {
@@ -648,26 +656,29 @@ button.load__more img {
 .date p {
     text-align: center;
 }
+
 .card__three {
     width           : 25%;
     background-color: rgb(8, 29, 31);
     text-align      : center;
     color           : #ffff;
-    padding         : 40px 0;
+    padding         : 55px 0;
     border-top      : 7px solid rgb(78, 206, 163);
 }
 
 .card__three img {
-    width           : 60px;
-    padding         : 15px;
+    width           : 53px;
+    height          : 53px;
+    padding         : 13px;
     background-color: rgb(78, 206, 163);
     border-radius   : 100%;
 }
 
 .card__three .data_img {
     margin       : 0 auto;
-    width        : 100px;
-    padding      : 15px;
+    width        : 72px;
+    height       : 72px;
+    padding      : 8px;
     border-radius: 100%;
     border       : 1px solid rgb(78, 206, 163);
 }
@@ -760,12 +771,11 @@ button.load__more img {
 }
 
 #last__slider {
-    /* background-image: url(../img/pexels-sanaan-mazhar-3075993-min-min.jpg);
+    background-image: url(../img/pexels-steven-arenas-379419-min.jpg);
     height             : 100%;
     background-position: center;
     background-repeat  : no-repeat;
-    background-size    : cover; */
-    background-color: rgb(20, 76, 82);
+    background-size    : cover;
     padding         : 50px 0;
     color           : #ffff;
 }
@@ -776,7 +786,7 @@ button.load__more img {
 
 #last__slider .main__box .qoutes {
     width : 45px;
-    margin: 30px auto;
+    margin: 0 auto 30px;
 }
 
 #last__slider .main__box .slider__txt {
@@ -798,7 +808,7 @@ button.load__more img {
     border-radius   : 100%;
     padding         : 8px;
     background-color: rgb(78, 206, 163);
-    margin          : 30px auto;
+    margin          : 14px auto;
 }
 
 #our_meet_section {
@@ -849,7 +859,7 @@ button.load__more img {
 h3.meet__name {
     color      : #fff;
     font-weight: bold;
-    padding: 20px 17px 8px;
+    padding    : 20px 17px 8px;
 }
 
 p.designation {
@@ -870,7 +880,7 @@ p.designation {
 }
 
 .social_net ul li img {
-    width: 20px;
+    width : 20px;
     height: 20px;
 }
 
@@ -916,11 +926,12 @@ p.designation {
 }
 
 .technologies ul li::before {
-    content         : '✔';
-    margin          : 0 12px;
-    padding         : 6px;
-    background-color: rgb(78, 206, 163);
-    border-radius   : 100%;
+    content: '';
+    background-image: url(../img/png/r.png);
+    background-size: 19px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 18px;
 }
 
 .technologies button {
@@ -937,12 +948,13 @@ p.designation {
 }
 
 #form__section .map {
-    width      : 50%;
-    margin-left: -124px;
+    width      : 60%;
+    margin-left: -137px;
+    height: fit-content;
 }
 
 #form__section .right_part {
-    width : 57%;
+    width : 49%;
     margin: auto 0;
 }
 
@@ -1008,7 +1020,7 @@ p.designation {
 }
 
 #footer__section .footer__box address {
-    padding    : 20px 0;
+    padding    : 35px 0;
     font-style : normal;
     line-height: 1.7;
 }
@@ -1025,6 +1037,9 @@ p.designation {
 .footer__boxs {
     width: 25%;
 }
+.footer__boxs:last-child{
+    width: 19%;
+}
 
 .footer__boxs .footer__heading {
     font-size  : 19px;
@@ -1034,8 +1049,7 @@ p.designation {
 
 .footer__boxs .wrapper_footer {
     display       : flex;
-    margin        : 25px 0;
-    padding-bottom: 20px;
+    padding: 26px 0;
     border-bottom : 1px solid #fff;
 }
 
@@ -1082,14 +1096,14 @@ p.designation {
 }
 
 .footer__boxs .mail {
-    padding         : 8px;
+    padding         : 8px 13px;
     background-color: transparent;
     border          : 1px solid rgb(194, 194, 194);
     color           : #ffff;
 }
 
 .footer__boxs .btn_go {
-    padding         : 8px 13px;
+    padding         : 8px 18px;
     margin          : 0 -5px;
     color           : rgb(78, 206, 163);
     background-color: transparent;
@@ -1105,12 +1119,12 @@ p.designation {
 .footer__boxs .flick {
     display  : flex;
     flex-wrap: wrap;
-    margin   : 12px 0;
+    margin   : 20px 0;
 }
 
 .footer__boxs .flick img {
-    width : 46%;
-    margin: 12px 0;
+    width: 47%;
+    margin: 7px 0;
 }
 
 /* copy right css */
@@ -1132,37 +1146,44 @@ p.designation {
 /* media querry */
 @media screen and (max-width: 992px) {
     .three__line {
-       display: block;
+        display: block;
     }
+
     .container {
         padding  : 0 6%;
         margin   : 0 auto;
         width    : 100%;
         max-width: 100%;
     }
+
     #top__header .menue {
-        margin: auto 0;
-        position: absolute;
+        margin    : auto 0;
+        position  : absolute;
         background: rgb(8, 29, 31);
-        width: 100%;
-        height: 1000vh;
-        top: 100%;
-        left: 0;
-        display: none;
+        width     : 100%;
+        height    : 1000vh;
+        top       : 100%;
+        left      : 0;
+        display   : none;
     }
+
     header#top__header .menue .d-flex {
         flex-direction: column;
     }
+
     #top__header .menue li {
-        padding: 25px 6px;
-        margin-left: 68px;
+        padding      : 25px 6px;
+        margin-left  : 7%;
         border-bottom: 1px solid #fff;
     }
-    #top__header .menue li:last-child{
+
+    #top__header .menue li:last-child {
         border: 0;
     }
 
 }
+
+
 @media screen and (max-width: 768px) {
 
     #tabs__section,
@@ -1173,12 +1194,13 @@ p.designation {
 
     #features .feature_one {
         width : 100%;
-        margin: 10px 0;
+        margin: 20px 0;
     }
 
     .space {
-        padding: 12px 0;
+        padding: 25px 0;
     }
+
     #news__section,
     #install__section,
     #work__section,
@@ -1200,6 +1222,7 @@ p.designation {
         font-size : 14px;
         margin-top: 12px;
     }
+    #footer__section,
     #form__section,
     #wordpress__theme,
     #last__slider,
@@ -1219,109 +1242,197 @@ p.designation {
 
     #news__section .card__two {
         width : 100%;
-        margin: 13px 0;
+        margin: 20px 0;
     }
+
     #news__section .card__two img {
-        height: 300px;
-        width: 100%;
+        height: 360px;
+        width : 100%;
     }
+
     #news__section .card__two .date {
-        padding: 29px 40px 0 40px;
+        padding   : 29px 40px 0 40px;
         text-align: center;
     }
+    .footer__boxs:last-child,
     #footer__section .footer__box,
     .footer__boxs,
     .card__three {
         width: 100%;
     }
+
     #our_meet_section .meet__card,
     #pricing .main__card {
-        width: 100%;
+        width : 100%;
         margin: 30px 0 5px;
     }
+
     #wordpress__theme .wordpress__txt {
         font-size: 20px;
     }
+
     #wordpress__theme .creative__txt {
         font-size: 18px;
     }
+
     #form__section .map,
     #wordpress__theme .tablet {
         display: none;
     }
+
     .technologies {
-        width: 100%;
+        width : 100%;
         margin: auto 0;
     }
+
     #form__section .right_part {
-        width: 100%;
-        margin:0 auto;
+        width : 100%;
+        margin: 0 auto;
     }
+
     #top__slider .slider__box {
         top: 28%;
     }
+
     .btn {
         margin-top: 30px;
     }
+
     .right_part textarea,
     .right_part input {
         padding: 12px;
-        width: 100%;
-        margin: 10px 0 5px;
+        width  : 100%;
+        margin : 10px 0 5px;
+    }
+    #top__slider img.slider__img {
+        height: 400px;
+    }
+    #first__cart_section .card {
+        padding: 80px 0;
+    }
+    .tab {
+        padding: 7px 10px;
+        margin: 0px -3px;
+    }
+    .warpper {
+        margin-top: 61px;
+    }
+    .panels {
+        padding: 30px 0;
+    }
+    .tabs__img {
+        width: 33%;
+    }
+    .about__img {
+        padding: 26px 0;
+    }
+    img.link_tabs {
+        width: 27px;
+        height: 27px;
+        padding: 4px;
+    }
+    .about__img .heading__two {
+        font-size: 12px;
+        padding-top: 6px;
+    }
+    .load__more {
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 480px) {
     #top__slider .pargraph {
         font-size: 18px;
     }
+
     #top__slider .heading {
         font-size: 32px;
     }
+
     #top__slider .paragraph__one {
         font-size: 14px;
     }
+
     #top__slider img.slider__img {
-        width: 100%;
+        width : 100%;
         height: 342px;
     }
+
     #top__slider .slick-list {
         height: 342px !important;
     }
+
     #tabs__section .main__heading,
     .main__heading {
         font-size: 22px;
     }
-    .main__heading::after {
-        content: "";
-        position: absolute;
-        bottom: -15px;
-        left: 36%;
-    }
+
     #features .feature__txt {
         font-size: 14px;
     }
+
     #first__cart_section .card img {
-        width: 100px;
-        height: 60px;
+        width: 48px;
+        height: 59px;
     }
+
     #tabs__section .main__heading::after {
-        content: "";
+        content : "";
         position: absolute;
-        bottom: -15px;
-        left: 19%;
+        bottom  : -15px;
+        left    : 19%;
     }
+
     .tabset>label {
-        padding: 8px 4px;
-        font-size: 11px;
-        margin-top: 53px;
+        padding   : 8px 4px;
+        font-size : 11px;
+        margin-top: 24px;
     }
-    #work__section{
+
+    #work__section {
         display: none;
     }
-    #form__section .space{
+
+    #form__section .space {
         padding: 30px 0 0 0;
     }
+
     .copy_right {
         padding: 11px;
+    }
+    .btn button {
+        padding: 9px 5px;
+    }
+    .technologies button,
+    #tabs__section .inner__bar__five,
+    #tabs__section .inner__bar__four,
+    #tabs__section .inner__bar__three,
+    #tabs__section .inner__bar__two,
+    #tabs__section .inner__bar__one {
+        padding: 10px;
+    }
+    .tab-panel {
+        padding: 16px 0;
+    }
+    #install__section .second__txt {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+    
+    #install__section button {
+        margin: 23px 0;
+        padding: 10px;
+    }
+    #last__slider .main__box {
+        margin: 30px 0;
+    }
+    #wordpress__theme .creative__txt,
+    #wordpress__theme .wordpress__txt {
+        font-size: 14px;
+    }
+    .footer__boxs .mail {
+        padding: 8px 6px;
+    }
+    .copy_right p {
+        font-size: 10px;
     }
 }
